@@ -1,0 +1,86 @@
+.navbar{
+    background-color: white;
+    }
+    .nav-link{
+    color: black;
+    }
+    .link {
+    display: inline-block;
+    vertical-align: top;
+    width: 93px;
+    height: 38px;
+      line-height: 38px;
+    text-transform: uppercase;
+    text-decoration: none;
+    // color: #fff;
+    color: black;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 10px;
+    position: relative;
+    }
+    .link span {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    }
+    .wipe {
+    border: 2px solid #fff;
+    border-radius: 21px;
+    overflow: hidden;
+    }
+    .activeA{
+     border: 2px solid black;
+    border-radius: 21px;
+    overflow: hidden;
+      }
+    /*nav-links hover styles below*/
+    .coolBeans {
+    transition: 0.2s -webkit-transform ease-in-out;
+    transition: 0.2s transform ease-in-out;
+    transition: 0.2s transform ease-in-out, 0.2s -webkit-transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    }
+    .coolBeans::after {
+      // background: #8A2387;  /* fallback for old browsers */
+      // background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+      // background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: #6190E8;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: right center;
+    text-decoration-color: #fff;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform: translate(-100%, 0) rotate(10deg);
+        transform: translate(-100%, 0) rotate(10deg);
+    -webkit-transform-origin: top left;
+        transform-origin: top left;
+    transition: 0.2s -webkit-transform ease-out;
+    transition: 0.2s transform ease-out;
+    transition: 0.2s transform ease-out, 0.2s -webkit-transform ease-out;
+    will-change: transform;
+    z-index: -1;
+    }
+    .coolBeans:hover::after {
+    -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    .coolBeans:hover {
+    border: 2px solid transparent;
+    color: #4b0082;
+    -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    will-change: transform;
+    }
